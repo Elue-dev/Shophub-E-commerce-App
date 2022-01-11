@@ -77,7 +77,7 @@ export const Home = () => {
             /><span className='sort'>High to low</span>
           </div>
 
-          <div><button onClick={() => window.location.reload()} className='btn clear_filters'>Default Sorting</button></div>
+          <div><button onClick={() => window.location.reload()} className='clear_filters'>Default Sorting</button></div>
         </div>
 
             {products.length === 0 ? (

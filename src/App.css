@@ -678,7 +678,10 @@ select:focus{
 }
 
 .clear_filters{
-
+  border: 0;
+  outline: 0;
+  padding: .4rem .8rem;
+  border-radius: .3rem;
 }
 
 @media(max-width: 1024px){
@@ -892,6 +895,16 @@ select:focus{
 
   .search{
     width: 350px;
+  }
+
+  .radio{
+    display: block;
+    line-height: 1;
+    text-align: center;
+  }
+
+  .clear_filters{
+    margin-top: .8rem;
   }
 }
 
