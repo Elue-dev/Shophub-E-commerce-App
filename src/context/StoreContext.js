@@ -20,17 +20,6 @@ export const StoreProvider = ({children}) => {
         searchQuery: ''
     })
 
-    // const [state, dispatch] = useReducer(StoreReducer, initialState,  () => {
-    //     const localData = localStorage.getItem('cart')
-    //     return localData ? JSON.parse(localData) : []
-    // })
-    
-
-    useEffect(() => {
-        localStorage.setItem('cart', JSON.stringify(state.cart))
-    },[state.cart])
-
-
     return(
         <StoreContext.Provider value={{
             products,

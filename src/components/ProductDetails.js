@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import { StoreContext } from '../context/StoreContext'
 import { Link } from 'react-router-dom'
 import '../App.css'
+import { MdAddShoppingCart } from 'react-icons/md'
+import { IoEyeSharp } from 'react-icons/io5'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpinner } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -49,12 +51,12 @@ export const ProductDetails = () => {
                         <p><b>Rating:</b> {item.rating.rate}/5 ({item.rating.count} purchasers)</p>
                         <p><b>Price:</b> ${item.price}</p>
                         {cart.some(p => p.id === item.id) ? (
-                                <Link to='/cart'><button className='btn view_in_cart'><i className="fas fa-eye"></i>  View in Cart</button></Link>
+                                <Link to='/cart'><button className='btn view_in_cart'><IoEyeSharp className='view_det' /> View in Cart</button></Link>
                         ) : (
                                 <button onClick={() =>dispatch({
                                     type: 'ADD_TO_CART',
                                     payload: item
-                                })} className='btn add_to_cart det'><i className="fas fa-cart-plus"></i> Add To Cart</button>
+                                })} className='btn add_to_cart det'><MdAddShoppingCart className='add_prod'/> Add To Cart</button>
                         )}
                     </div>
                 </div>

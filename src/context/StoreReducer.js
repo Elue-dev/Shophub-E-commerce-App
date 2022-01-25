@@ -21,8 +21,6 @@ export const productReducer = (state, action) => {
             return {...state, sort: action.payload}
         case 'FILTER_BY_SEARCH':
             return {...state, searchQuery: action.payload}
-        case "CLEAR_FILTERS":
-            return state;
         default:
             return state
     }

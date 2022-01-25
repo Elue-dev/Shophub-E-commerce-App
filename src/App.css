@@ -102,6 +102,19 @@ b{
   margin-bottom: 1rem;
 }
 
+.logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_icon{
+  font-size: 2rem;
+  color: rgb(22, 142, 179);
+  margin-right: .5rem;
+  
+}
+
 .nav_btn{
   display: flex;
   justify-content: center;
@@ -116,6 +129,10 @@ b{
   background: #333;
   color: #fff;
   font-weight: 700;
+}
+
+.nav_cart_icon{
+  font-size: 2rem;
 }
 
 .empty_cart{
@@ -324,6 +341,18 @@ b{
   display: block;
   width: 100%;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.add_prod{
+  font-size: 1.3rem;
+  margin-right: .3rem;
+}
+
+.added_prod{
+  font-size: 1rem;
 }
 
 .fa-cart-plus,
@@ -338,6 +367,11 @@ b{
   margin-top: 2rem;
 }
 
+.view_det{
+  font-size: 1.3rem;
+  margin-right: .2rem;
+}
+
 .cart_detail{
   background-color: transparent;
   border: 2px solid #333;
@@ -346,6 +380,9 @@ b{
   display: block;
   width: 100%;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .remove_from_cart{
@@ -362,6 +399,9 @@ b{
   font-weight: 700;
   padding: 0.6rem;
   margin-right: .5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .clear_cart_wrapper{
@@ -423,6 +463,10 @@ b{
 
 .cart{
   margin-top: 3rem;
+}
+
+.remove{
+  font-size: 1.3rem;
 }
 
 .summary{
